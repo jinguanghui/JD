@@ -83,6 +83,7 @@
     float: left;
 }
 .jd_bannerImg > li img{
+	/*去除文本基线方法*/
     /*1.设置为块元素
     2.可以将文本的字体大小设置为0
     3.vertical-align:bottom*/
@@ -122,11 +123,11 @@
 	width: 25%;
 	float: left;
 	text-align: center;
-	margin-top: 5px;
+	margin-top: 3px;
 }
 .jd_nav li img{
-	width: 60px;
+	width: 46px;
 }
 .jd_nav li p {
-	padding: 8px 0;
+	padding: 5px 0;
 }
