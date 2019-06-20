@@ -174,4 +174,9 @@
     width: 100%;
     display: block;
 }
-
+.b_left{
+	border: solid 1px gray;
+}
+.b_bottom{
+	border-bottom: solid 1px gray;
+}
