@@ -86,7 +86,7 @@
     /*1.设置为块元素
     2.可以将文本的字体大小设置为0
     3.vertical-align:bottom*/
-    /*display: block;*/
+    display: block;
     width: 100%;
 }
 .jd_bannerIndicator{
@@ -110,4 +110,23 @@
 }
 .jd_bannerIndicator > li.active{
     background-color: #fff;
+}
+
+/*导航栏样式*/
+.jd_nav{
+	width: 100%;
+	background-color: #fff;
+	padding: 10px 0;
+}
+.jd_nav li{
+	width: 25%;
+	float: left;
+	text-align: center;
+	margin-top: 5px;
+}
+.jd_nav li img{
+	width: 60px;
+}
+.jd_nav li p {
+	padding: 8px 0;
 }
