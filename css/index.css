@@ -95,7 +95,7 @@
     height: 10px;
     position: absolute;
     left: 50%;
-    bottom: 5px;
+    bottom: 1px;
     transform: translateX(-50%);
 }
 .jd_bannerIndicator > li{
