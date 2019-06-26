@@ -76,10 +76,12 @@
     position: relative;
 }
 .jd_bannerImg{
-    width:1000%;
+    /*width:1000%;*/
+    position: relative;
+    /*left: -100%;*/
 }
 .jd_bannerImg > li{
-    width:10%;
+    /*width:12.5%;*/
     float: left;
 }
 .jd_bannerImg > li img{
