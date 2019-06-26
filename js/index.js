@@ -9,12 +9,13 @@ function searchEffect(){
 	var search = document.querySelector(".jd_search");
 	var banner = document.querySelector(".jd_banner");
 	var bannerHeight = banner.offsetHeight;
+	bannerHeight = bannerHeight/10;
 	console.log(bannerHeight);
 	window.onscroll=function(){
 		var offTop = document.body.scrollTop+document.documentElement.scrollTop;
 		console.log(offTop);
 		var opacity=0;
-		var bannerHeight = bannerHeight/10;
+		console.log(bannerHeight);
 		if(offTop<(bannerHeight)){
 		
 			opacity= offTop/bannerHeight;
