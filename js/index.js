@@ -26,7 +26,7 @@ function searchEffect(){
 //倒计时
 function timeBack(){
 	var spans = document.querySelector(".jd_sk_time").querySelectorAll("span");
-	var totaltime = 1*60*60;
+	var totaltime = 4200;
 	setInterval(function(){
 		totaltime--;
 		var h = Math.floor(totaltime/3600);
