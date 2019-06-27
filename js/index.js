@@ -85,7 +85,7 @@ function bannerEffect(){
 	
 	 /*实现点标记*/
    var setIndicator=function(index){
-       var indicators=banner.querySelector("ul:last-of-type").querySelectorAll("li");
+       var indicators=banner.querySelector(".jd_bannerIndicator").querySelectorAll("li");
        /*先清除其它li元素的active样式*/
        for(var i=0;i<indicators.length;i++){
            indicators[i].classList.remove("active");
@@ -143,6 +143,7 @@ function bannerEffect(){
         isEnd=false;
 //		判断滑动的距离如果大于100像素实现翻页
 		if(Math.abs(distenceX)>100){
+//			console.log(distenceX);
 //			向右滑动索引减一
 			if(distenceX>0){
 				index--;
@@ -157,10 +158,14 @@ function bannerEffect(){
 			imageBox.style.transition="left 0.5s ease-in-out";
 			imageBox.style.left = -index*bannerWidth + "px";
 		}
+		startX=0;
+		moveX=0;
+		distenceX=0;
+		startTime();
 	});
 	 /*webkitTransitionEnd:可以监听当前元素的过渡效果执行完毕，当一个元素的过渡效果执行完毕的时候，会触发这个事件*/
 	imageBox.addEventListener("webkitTransitionEnd",function(){
-//		console.log("webkitTransitionEnd");
+//		console.log("webkitTransitionEnd"); 
 		 /*如果到了最后一张(count-1)，回到索引1*/
         /*如果到了第一张(0)，回到索引count-2*/
 		if(index==count-1){
@@ -179,9 +184,9 @@ function bannerEffect(){
 		 /*设置标记*/
         setIndicator(index);
 		setTimeout(function(){
-        	isEnd=true;
+			isEnd=true;
 			clearInterval(timerId);
 			startTime();
-		},100);
+		},2000);
 	});
 }
